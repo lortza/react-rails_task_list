@@ -1,0 +1,26 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.right {float: right;}
+
+i, a {
+  &:hover {
+    color: lightgreen;
+    text-decoration: none;
+  }
+}
+.card-body p {margin: 0;}
+
+
+// Icons
+.fa-check-square {color: green;}
+
+.fa-square {color: gray;}
+
+.fas.fa-exclamation-circle {color: red;}
+.far.fa-exclamation-circle {color: gray;}
+
+.fa-times-circle {color: red;}
+
+

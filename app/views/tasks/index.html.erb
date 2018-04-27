@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tasks <%= link_to 'New Task', new_task_path, class: 'right btn btn-xs btn-primary' %></h1>
+
+<div id="task-list">
+  <% @tasks.each do |task| %>
+    <div class="card card-body mb-3">
+      <p>
+        <%= check_mark(task.complete) %> <%= task.title %> <span class="right"><%= priority_mark(task.priority) %> <%= link_to '', edit_task_path(task), class: 'far fa-edit mr-2' %> <%= link_to '', task, class: "fa fa-times-circle", method: :delete, data: {confirm: "Are you sure about this? Tasks can not be recovered after deletion."} %></span>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<br>
+
+
