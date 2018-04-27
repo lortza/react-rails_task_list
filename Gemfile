@@ -46,7 +46,6 @@ group :development, :test do
   gem 'binding_of_caller' #goes with better_errors
   gem 'lol_dba' # profiles app for performance
   gem 'reek' # detects code smells when you run `reek file_name_or_directory` on the command line
-  gem 'seed_dump' # call with rake db:seed:dump
 end
 
 group :development do
