@@ -1,6 +1,6 @@
 # No longer needed. Replaced by React functions.
 
-# module TasksHelper
+module TasksHelper
 
 #   def check_mark(attribute)
 #     if attribute
@@ -18,4 +18,4 @@
 #     end
 
 #   end
-# end
+end

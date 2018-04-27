@@ -1,9 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Tasks <%= link_to 'New Task', new_task_path, class: 'right btn btn-xs btn-primary' %></h1>
+<h1>Tasks</h1>
 
-<div id="task-list">
-  <% @tasks.each do |task| %>
-    <%= react_component 'Task', task: task %>
-  <% end %>
-</div>
+  <%= react_component 'Tasks', { new_task: @task, tasks: @tasks } %>

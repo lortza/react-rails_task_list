@@ -1,3 +1,5 @@
+<!--  not being used for New -->
+
 <%= form_with(model: task, local: true) do |form| %>
   <% if task.errors.any? %>
     <div id="error_explanation">
@@ -12,25 +14,23 @@
   <% end %>
 
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-6">
       <%= form.label :title %>
       <%= form.text_field :title, class: 'form-control' %>
     </div>
-  </div> <!-- row -->
 
-  <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-2">
       <%= form.label :priority %>
       <%= form.check_box :priority %>
     </div>
 
-    <div class="col-sm-6">
+    <div class="col-sm-2">
       <%= form.label :complete %>
       <%= form.check_box :complete %>
     </div>
-  </div> <!-- row -->
 
-  <div class="actions">
-    <%= form.submit class: 'btn btn-sm btn-primary' %>
-  </div>
+    <div class="col-sm-2 pt-4">
+      <%= form.submit class: 'btn btn-sm btn-primary' %>
+    </div>
+  </div> <!-- row -->
 <% end %>
