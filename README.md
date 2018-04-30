@@ -7,3 +7,9 @@ This is a practice task list app using the `react-rails` gem to incorporate a re
 * Postgres '>= 0.18', '< 2.0'
 * ES6 Javascript
 * 'react-rails' gem
+
+## Setup
+
+Run `rake db:seed`
+
+View with `rails s` on `localhost:3000`
